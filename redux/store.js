@@ -10,7 +10,7 @@ import newsCardsReducer from "./reducers/newsCardsReducer";
 import articleCardsReducer from "./reducers/articleCardsReducer";
 // import homeCardsREducer from "./reducers/homeCardsREducer";
 import housingComplexesReducer from "./reducers/housingComplexesReducer";
-import homeRatingCardsReducer from "./reducers/homeRatingCardsREducer";
+import homeRatingCardsReducer from "./reducers/homeRatingCardsReducer";
 import homeCardsRedcuer from "./reducers/homeCardsRedcuer";
 import popularRequestsReducer from "./reducers/popularRequestsReducer";
 import largeHousesReducer from "./reducers/largeHousesReducer";
