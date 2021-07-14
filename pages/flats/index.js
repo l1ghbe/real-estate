@@ -1,9 +1,8 @@
-import Test from "../../redux/Test/Test";
 
 const Flats = () => {
   return (
     <div>
-      <Test />
+      <h1>Page for flats</h1>
     </div>
   );
 };
