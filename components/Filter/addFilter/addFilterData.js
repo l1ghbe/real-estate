@@ -105,7 +105,7 @@ const addFilterData = [
     name: "Застройщик",
     key: "developer",
     type: "select",
-    options: ["MaximStroi", "IvanStroi", "YaEblanStroi"],
+    options: ["MaximStroi", "IvanStroi", "SomethingElse"],
   },
   {
     name: "Площадь участка",

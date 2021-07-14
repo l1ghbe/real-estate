@@ -1,6 +1,4 @@
 import styles from "./Complexes.module.scss";
-import IvanTest from "../../components/IvanTest/IvanTest";
-import MaximTest from "../../components/MaximTest/MaximTest";
 import Container from "../../components/Container/Container";
 import ContainerSecond from "../../components/ContainerSecond/ContainerSecond";
 import DocsSection from "../../components/PageSections/DocsSection/DocsSection";
