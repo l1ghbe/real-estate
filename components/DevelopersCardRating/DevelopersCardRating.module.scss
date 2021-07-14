@@ -1,0 +1,69 @@
+@import "../../styles/colors.scss";
+
+.devs-rating-card {
+    border-radius: 16px;
+    background: $l-gray;
+    padding: 32px 24px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    // max-width: 530px;
+    max-width: 100%;
+    @media (max-width: 1066px) {
+        flex-direction: column;
+    }
+    @media (max-width: 380px) {
+        padding: 16px 12px;
+    }
+}
+
+.devs-rating-card-title {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 130%;
+    color: $black;
+    @media (max-width: 1066px) {
+        margin-bottom: 0;
+        // font-size: 14px;
+        // line-height: 130%;
+        // color: $black;
+    }
+    @media (max-width: 370px) {
+        font-size: 14px;
+        max-width: 88px;
+    }
+    
+}
+
+.developerTitle {
+    @media (max-width: 580px) {
+        display: none;
+    }
+}
+
+.devs-rating-card-data {
+    font-size: 32px;
+    line-height: 130%;
+    color: $black;
+    font-weight: 600;
+    text-align: center;
+    @media (max-width: 479px) {
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+.devs-rating-card-developer,
+.devs-rating-card-place,
+.devs-rating-card-quantity,
+.devs-rating-card-cottages {
+    @media (max-width: 1066px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        &:not(:last-child) {
+            margin-bottom: 14px;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@import "../../styles/colors.scss";
+
+.news-single {
+  display: flex;
+  margin-bottom: 152px;
+  @media (max-width: 720px) {
+    margin-bottom: 56px;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,139 @@
+@import "../../styles/colors.scss";
+
+.insta-card {
+    position: relative;
+    width: 320px;
+    border-radius: 20px;
+    border: 1px solid $l-gray;
+    font-family: 'SF UI Text', sans-serif;
+    margin-right: 17px;
+    &:last-child {
+        margin-right: 0;
+    }
+
+}
+
+.instagram {
+    margin-bottom: 152px;
+    @media (max-width: 720px) {
+        margin-bottom: 56px;
+    }
+}
+
+.instagram-cards {
+    display: flex;
+    @media (max-width: 1439px) {
+        overflow-x: auto;
+    }
+}
+
+.instagram-title {
+    margin-bottom: 48px;
+    @media (max-width: 720px) {
+        margin-bottom: 24px;
+    }
+}
+
+.insta-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 8px 6px 10px;
+}
+.insta-header__info {
+    display: flex;
+    align-items: center;
+}
+.insta-header__logo {
+    margin-right: 10px;
+    cursor: pointer;
+    & img {
+        border-radius: 50%;
+
+    }
+}
+.insta-header-text {
+    cursor: pointer;
+}
+.insta-header__title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    color: $black;
+    margin-bottom: 1px;
+}
+.insta-header__location {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 11px;
+    color: $black;
+}
+.insta-header__more {
+    display: flex;
+    cursor: pointer;
+}
+.insta-card-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 14px;
+    margin-bottom: 12px;
+    padding: 0 11px;
+}
+.insta-buttons-left {
+    & button {
+        display: inline-block;
+        cursor: pointer;
+        background-color: transparent;
+        &:not(:last-child) {
+            margin-right: 16px;
+        }
+    }
+}
+
+// сделал это, чтобы классы отобразились в DOM
+.insta-buttons-like {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.insta-buttons-comment {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.insta-buttons-share {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.insta-buttons-bookmark {
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.insta-card-text {
+    padding: 0 8px 20px;
+    
+}
+
+.insta-card-liked-info {
+    color: $black;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.insta-card-description {
+    margin-top: 6px;
+    color: $black;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    & span {
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,110 @@
+@import "../../../styles/colors.scss";
+
+.buy-apartment {
+    margin-bottom: 152px;
+    @media (max-width: 720px) {
+        margin-bottom: 56px;
+    }
+}
+.buy-apartment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+}
+.buy-apartment-card {
+    position: relative;
+    // background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+    // mix-blend-mode: multiply;
+    border-radius: 20px;
+    overflow: hidden;
+    & .buy-apartment-img {
+        transition: 1.5s;
+
+        &:hover {
+            transform: scale(1.09);
+        }
+    }
+    & button {
+        position: absolute;
+        bottom: 32px;
+        left: 32px;
+    }
+}
+.btn-show-all {
+    display: none;
+}
+.buy-apartment-all {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    background: $l-gray;
+    z-index: 2;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    & p {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 124%;
+        color: $black;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .buy-apartment-card {
+        & button {
+            padding: 12px;
+
+        }
+    }
+}
+@media screen and (max-width: 1100px) {
+    .buy-apartment-card {
+        & button {
+            bottom: 18px;
+            left: 18px;
+        }
+    }
+    .buy-apartment-all {
+        & p {
+            font-size: 24px;
+        }
+    }
+}
+@media screen and (max-width: 920px) {
+    .buy-apartment-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .buy-apartment-all {
+        & p {
+            font-size: 20px;
+        }
+    }
+}
+@media screen and (max-width: 570px) {
+    .buy-apartment {
+        margin-bottom: 56px;
+    }
+    .buy-apartment-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .buy-apartment-card-all {
+        display: none;
+    }
+    .btn-show-all {
+        display: block;
+        margin-top: 24px;
+        & button {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}

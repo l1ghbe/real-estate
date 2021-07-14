@@ -1,0 +1,52 @@
+@import "../../styles/colors.scss";
+
+.container {
+  border-radius: 20px;
+  background: $white;
+  // grid-gap: 20px;
+  // margin: 10px;
+  border: 2px solid $l-gray;
+}
+.content {
+  padding: 10px 20px 20px 20px;
+}
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.description {
+  color: $gray;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.location {
+  margin-bottom: 16px;
+  color: $gray;
+}
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.without-rating {
+  border-top: 1px solid $gray;
+  padding-top: 10px;
+  margin-top: 45px;
+}
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+.status {
+  font-weight: bold;
+}
+
+.image {
+  img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,64 @@
+@import "../../styles/colors.scss";
+
+.container {
+  background: $l-gray;
+  border-radius: 20px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &-first {
+    padding: 48px;
+  }
+  @media (max-width: 1000px) {
+    padding-top: 16px;
+    padding-bottom: 18px;
+    padding-left: 29px;
+  }
+  @media (max-width: 520px) {
+    padding-left: 9px;
+  }
+}
+.rating {
+  font-size: 14px;
+  display: flex;
+  &-flex {
+    justify-content: start;
+  }
+  &-number {
+    padding-left: 5px;
+    display: inline-block;
+  }
+  &-title {
+    padding-right: 10px;
+  }
+}
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 12px 0;
+}
+.image-wrapper {
+  display: flex;
+  align-items: center;
+}
+.first-wrapper {
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+.optional{
+    @media (max-width: 1000px) {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+  .mobile-adaptive-image img {
+    width: 85px;
+    height: 50px;
+  }
+  .container {
+    padding: 16px 0 18px 9px;
+  }
+}

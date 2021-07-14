@@ -1,0 +1,24 @@
+@import "./../../styles/colors.scss";
+
+.news-board {
+  flex-basis: 35%;
+  @media (max-width: 720px) {
+    flex-basis: 100%;
+  }
+}
+
+.news-board-title {
+  // display: inline-block;
+  margin-bottom: 34px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 124%;
+  color: $black;
+  @media (max-width: 1250px) {
+    font-size: 24px;
+  }
+  @media (max-width: 720px) {
+    font-size: 28px;
+    margin-bottom: 19px;
+  }
+}

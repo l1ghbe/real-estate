@@ -1,0 +1,30 @@
+@import "../../styles/colors.scss";
+
+.rating {
+  height: 4px;
+  width: 70%;
+  position: absolute;
+  bottom: -2px;
+  border-radius: 2px;
+  left: 0;
+}
+.flex{
+    display: flex;
+    font-weight: bold;
+    position: relative;
+    font-size: 14px;
+    justify-content: space-between;
+    padding-bottom:10px ;
+    border-bottom: 1px solid $gray;
+}
+.good {
+  background: $green;
+}
+
+.bad {
+  background: $l-red;
+}
+
+.average {
+  background: $yellow;
+}

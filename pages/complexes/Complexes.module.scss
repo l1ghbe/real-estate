@@ -1,0 +1,24 @@
+@import "../../styles/colors.scss";
+
+
+.filter {
+    margin-top: 48px;
+    margin-bottom: 88px;
+    @media (max-width: 720px) {
+        margin-bottom: 56px;
+    }
+}
+
+.gallery-title {
+  max-width: 1330px;
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 48px;
+}
+
+.gallery {
+    margin-bottom: 152px;
+    @media (max-width: 720px) {
+        margin-bottom: 56px;
+    }
+}

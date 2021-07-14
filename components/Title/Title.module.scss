@@ -1,0 +1,11 @@
+@import "../../styles/colors.scss";
+
+.title {
+    line-height: 130%;
+    color: $black;
+    font-weight: 600;
+    font-size: 48px;
+    @media (max-width: 520px) {
+        font-size: 28px !important;
+    }
+}

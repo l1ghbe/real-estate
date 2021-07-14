@@ -1,0 +1,68 @@
+@import "../../../styles/colors.scss";
+
+.complex-ratings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 82px;
+    @media (max-width: 720px) {
+        margin-bottom: 56px;
+    }
+    @media (max-width: 1140px) {
+        flex-direction: column;
+    }
+    @media (max-width: 720px) {
+        align-items: flex-start;
+    }
+}
+
+.complex-ratings-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 124%;
+    color: $black;
+    max-width: 136px;
+    @media (max-width: 1140px) {
+        max-width: 100%;
+        margin-bottom: 22px;
+    }
+}
+
+.complex-ratings-item {
+    background: $l-gray;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1140px) {
+        width: 100%;
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+    
+}
+.complex-ratings-item-star {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    & span {
+        display: inline-block;
+        margin-left: 10px;
+    }
+}
+.complex-ratings-item-text {
+    font-size: 16px;
+    line-height: 150%;
+    color: $black;
+    margin: 0 50px 0 16px;
+    @media (max-width: 1330px) {
+        margin: 0 16px;
+    }
+}
+.complex-ratings-item-date {
+    font-size: 12px;
+    line-height: 16px;
+    color: $black;
+}

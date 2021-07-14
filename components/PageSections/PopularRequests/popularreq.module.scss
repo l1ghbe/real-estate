@@ -1,0 +1,17 @@
+.container {
+  padding-bottom: 56px;
+  margin-bottom: 152px;
+  @media (max-width: 720px) {
+    margin-bottom: 56px;
+  }
+}
+
+.header {
+  font-weight: bold;
+  font-size: 48px;
+  @media (max-width: 1000px) {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  margin-bottom: 48px;
+}

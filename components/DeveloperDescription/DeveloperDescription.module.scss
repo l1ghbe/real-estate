@@ -1,0 +1,72 @@
+@import "../../styles/colors.scss";
+
+.devs-description {
+    margin-bottom: 152px;
+    @media (max-width: 720px) {
+        margin-bottom: 56px;
+    }
+}
+
+.devs-jk-rented-cards,
+.devs-jk-in-progress-cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    @media (max-width: 1168px) {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+}
+
+.devs-jk-rented-title,
+.devs-jk-in-progress-title {
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+.devs-jk-rented,
+.devs-jk-in-progress {
+    margin-bottom: 48px;
+}
+
+
+.devs-jk-card {
+    display: inline-block;
+    border-radius: 16px;
+    background: $l-gray;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    @media (max-width: 1168px) {
+        flex-shrink: 0;
+    }
+}
+
+.devs-jk-card-image {
+    margin-right: 16px;
+    @media (max-width: 1168px) {
+        flex-shrink: 0;
+    }
+    & img {
+        border-radius: 8px;
+    }
+}
+
+.devs-jk-card-text {
+    font-size: 16px;
+    line-height: 150%;
+    color: $black;
+    margin-right: 20px;
+    font-weight: 400;
+}
+.devs-jk-card-date {
+    font-size: 12px;
+    line-height: 16px;
+    color: $black;
+    font-weight: 400;
+}

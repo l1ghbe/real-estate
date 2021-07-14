@@ -1,0 +1,42 @@
+@import "./../../styles/colors.scss";
+
+.pagination {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 32px;
+  & li a {
+    border: 0;
+    color: $gray;
+    cursor: pointer;
+  }
+  &-prev {
+    border: 0 !important;
+  }
+  &-next {
+    border: 0 !important;
+  }
+  & a {
+    display: block;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin: 0 12px;
+  }
+}
+
+.pagination__link {
+  &-active a {
+    background: #000 !important;
+    color: white !important;
+  }
+  &-disabled {
+    // border: 1px solid #000;
+    // padding: 0 10px;
+  }
+}
+

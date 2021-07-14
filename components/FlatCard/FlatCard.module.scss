@@ -1,0 +1,88 @@
+@import "../../styles/colors.scss";
+
+.container {
+  position: relative;
+  border-radius: 20px;
+  background: $white;
+  position: relative;
+  padding: 25px;
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  @media(max-width:700px){
+    padding: 12px;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+}
+}
+.content {
+  padding: 10px 20px 20px 20px;
+  &-flex {
+    display: flex;
+    align-items: center;
+    @media (max-width: 700px) {
+      display: block;
+    }
+  }
+}
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.description {
+  padding: 16px 0;
+  @media (max-width: 700px) {
+    display: none;
+  }
+}
+.location {
+  //   margin-bottom: 16px;
+  color: $gray;
+}
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  border-top: 1px solid $l-gray;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+.status {
+  font-weight: bold;
+}
+
+.image {
+  @media (max-width: 700px) {
+    height: 160px;
+    width: 100%;
+    border-radius: 8px;
+  }
+  width: 290px;
+  height: 290px;
+  position: relative;
+  flex-shrink: 0;
+  img {
+    border-radius: 20px;
+    // object-fit: fill;
+  }
+}
+.developer-image {
+  @media (max-width: 800px) {
+    display: none;
+  }
+  position: absolute;
+  width: 80px;
+  object-fit: cover;
+  top: 30px;
+  right: 25px;
+}
+.summary {
+  padding-top: 16px;
+  border-top: $l-gray;
+}

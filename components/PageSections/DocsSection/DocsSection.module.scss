@@ -1,0 +1,220 @@
+@import "../../../styles/colors.scss";
+
+.docs {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 152px;
+  @media (max-width: 720px) {
+    margin-bottom: 56px;
+  }
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+  a {
+    color: $gray;
+  }
+}
+
+.docs-files {
+  flex: 2;
+  // width: 100%;
+  transition: 0.3s;
+  @media (max-width: 1400px) {
+    flex: 1.5;
+  }
+  @media (max-width: 1200px) {
+    flex: 1.1;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 124%;
+    max-width: 466px;
+    color: $black;
+    margin-bottom: 32px;
+    @media (max-width: 540px) {
+      font-size: 28px;
+      margin-bottom: 19px;
+    }
+  }
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+}
+
+.docs-files-nav {
+  margin-bottom: 24px;
+  width: 100%;
+  padding: 16px;
+  padding-right: 24px;
+  background: $l-gray;
+  border-radius: 16px;
+
+  &-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  &__title-text {
+    font-size: 24px;
+    line-height: 150%;
+    color: $black;
+  }
+  &__title-files {
+    margin-left: auto;
+    margin-right: 18px;
+    font-size: 12px;
+    line-height: 16px;
+    color: $black;
+    white-space: nowrap;
+  }
+}
+
+.docs-files-list {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+    height: 100%;
+  }
+  &__item {
+    border-bottom: 1px solid rgba($black, 0.2);
+    padding-bottom: 8px;
+    margin-top: 14px;
+  }
+
+  &__link {
+    &-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+
+    &-name {
+      font-size: 14px;
+      line-height: 19px;
+      color: $black;
+    }
+
+    &-date {
+      font-size: 14px;
+      line-height: 19px;
+      color: $black;
+    }
+
+    &-file {
+      display: inline-block;
+      font-size: 14px;
+      line-height: 140%;
+      color: $gray;
+    }
+  }
+}
+
+.docs-info {
+  background-color: $l-gray;
+  padding: 40px;
+  border-radius: 20px;
+  flex: 1;
+  margin-left: 24px;
+  @media (max-width: 1024px) {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.docs-info-text {
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+
+  &-left__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    color: $black;
+    margin-bottom: 8px;
+  }
+  &-left__price {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    color: $black;
+  }
+}
+
+.docs-info-text-in-progress,
+.docs-info-text-leased {
+  display: flex;
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.docs-info-text-in-progress-number,
+.docs-info-text-leased-number {
+  margin-right: 8px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+  color: $black;
+}
+
+.docs-info-text-in-progress-text,
+.docs-info-text-leased-text {
+  max-width: 119px;
+  font-size: 16px;
+  line-height: 130%;
+  color: $black;
+}
+
+.callme-btn {
+  margin-top: 40px;
+  width: 100%;
+  background-color: $black;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 19px 0;
+  border-radius: 12px;
+  & span {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 114%;
+    color: $white;
+    margin-left: 8px;
+  }
+}
+
+@media (max-width: 540px) {
+  .docs-files-nav {
+    &__title-text {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+  .docs-info {
+    display: none;
+  }
+}
+
+.arrow {
+  transition: 0.2s linear;
+}
+.opened {
+  transform: rotate(180deg);
+}
+.closed {
+  transform: rotate(0deg);
+}

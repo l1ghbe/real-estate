@@ -1,0 +1,77 @@
+@import "../../styles/colors.scss";
+
+.image-container {
+  img {
+    object-fit: cover;
+    border-radius: 20px;
+    @media (max-width: 900px) {
+      border-radius: 10px;
+    }
+  }
+}
+.nav-cont {
+  cursor: pointer;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: absolute;
+  bottom: 10%;
+  right: 4%;
+  z-index: 99;
+  & > * {
+    padding: 0 20px;
+  }
+}
+.disabled {
+  opacity: 0.4;
+}
+
+.developer-logo {
+  // margin-right: 90px;
+  // background: $white;
+  position: absolute;
+  top: 48px;
+  left: 3%;
+
+  @media (max-width: 1060px) {
+    right: 3%;
+    left: unset;
+  }
+  
+  & img {
+    z-index: 6;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: -50%;
+    background-color: $white;
+    width: 207px;
+    height: 84px;
+    border-radius: 0px 20px 20px 0px;
+    z-index: 1;
+    @media (max-width: 1060px) {
+      border-radius: 20px 0px 0px 20px;
+    }
+  }
+  @media (max-width: 720px) {
+    padding-right: 31px;
+    margin-right: 0;
+    border-right: 1px solid rgba($black, 0.2);
+    &::before {
+      height: 200%;
+    }
+    & img {
+      width: 80px;
+      height: 30px;
+    }
+    
+  }
+  @media (max-width: 590px) {
+
+      display: none;
+
+  }
+}

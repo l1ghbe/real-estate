@@ -1,0 +1,35 @@
+@import "./colors.scss";
+@font-face {
+  font-family: "Segoe UI";
+  font-weight: normal;
+  src: url("../public/fonts/Segoe\ UI.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: $white;
+  font-family: "Segoe UI", sans-serif;
+  overflow-x: hidden;
+}
+
+button {
+  border: 0;
+}
+
+input {
+  border: none;
+  outline: none;
+}

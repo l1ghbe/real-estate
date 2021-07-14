@@ -1,0 +1,28 @@
+.slick-prev:before,
+.slick-next:before {
+  content: "" !important;
+}
+
+
+#galery .slick-prev {
+  top: 50% !important;
+  left: 1% !important;
+  z-index: 1;
+}
+
+
+#galery .slick-next {
+  top: 50% !important;
+  left: 97% !important;
+  z-index: 1;
+}
+
+#anim .slick-slide,
+#galery .slick-slide {
+  padding: 0 10px;
+}
+
+.slick-arrow.slick-disabled{
+  opacity:0.4;
+  // background: red;
+}

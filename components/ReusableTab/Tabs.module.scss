@@ -1,0 +1,43 @@
+@import "../../styles/colors.scss";
+
+.tabs__box {
+  display: flex;
+  font-weight: bold;
+  color: $gray;
+  white-space: nowrap;
+  @media (max-width: 950px) {
+    overflow-x: auto;
+  }
+}
+.tabs-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & h1 {
+    @media (max-width: 720px) {
+      margin-bottom: 35px;
+    }
+  }
+  @media (max-width: 720px) {
+    // align-items: flex-start;
+    // flex-direction: column;
+    display: block;
+    padding-bottom: 15px;
+  }
+  padding-bottom: 40px;
+}
+.tabs__tab {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+  padding-bottom: 8px;
+  font-size: 16px;
+  border-bottom: 1px solid $gray;
+  cursor: pointer;
+  &.active {
+    color: $black;
+    border-bottom: 2px solid $black;
+  }
+  // @media (max-width: 720px) {
+  // }
+}

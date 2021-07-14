@@ -1,0 +1,58 @@
+@import "./../../styles/colors.scss";
+
+.container {
+  position: absolute;
+  color: $white;
+  z-index: 99;
+  font-weight: bold;
+  bottom: 10%;
+  left: 3%;
+}
+.title {
+  font-size: 64px;
+  font-weight: 600;
+  @media (max-width: 1330px) {
+    font-size: 50px;
+  }
+  @media (max-width: 800px) {
+    font-size: 32px;
+  }
+  @media (max-width: 500px) {
+    font-size: 20px;
+  }
+}
+.price {
+  font-size: 48px;
+  padding: 16px 0px;
+  @media (max-width: 1330px) {
+    font-size: 36px;
+  }
+  @media (max-width: 800px) {
+    font-size: 26px;
+  }
+  @media (max-width: 500px) {
+    font-size: 16px;
+    padding: 7px 0;
+  }
+  & > * {
+    display: inline-block;
+    @media (max-width: 500px) {
+      display: block;
+    }
+  }
+}
+.status {
+  font-size: 32px;
+  @media (max-width: 1330px) {
+    font-size: 27px;
+  }
+  @media (max-width: 800px) {
+    font-size: 20px;
+  }
+  @media (max-width: 500px) {
+    font-size: 12px;
+  }
+}
+.to {
+  margin-left: 10px;
+}

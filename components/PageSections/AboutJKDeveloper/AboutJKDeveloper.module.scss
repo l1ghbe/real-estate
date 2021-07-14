@@ -1,0 +1,144 @@
+@import "./../../../styles/colors.scss";
+
+.container {
+  margin-bottom: 56px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: row-reverse;
+  background: $l-gray;
+  margin-bottom: 16px;
+  border-radius: 20px;
+  position: relative;
+  align-items: stretch;
+  @media (max-width: 1160px) {
+    display: block;
+  }
+  // &::before {
+  //   content: '';
+  //   position: relative;
+  //   top: 24px;
+  //   left: 0;
+  //   background-color: $white;
+  //   width: 207px;
+  //   height: 84px;
+  //   border-radius: 0px 20px 20px 0px;
+  //   z-index: 1;
+  // }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+  @media (max-width: 720px) {
+    overflow-x: auto;
+  }
+}
+
+.info-class,
+.info-area,
+.info-paint {
+  display: flex;
+  padding-left: 16px;
+  padding-right: 16px;
+  align-items: flex-start;
+  &:not(:last-child) {
+    border-right: 1px solid rgba($black, 0.2);
+  }
+}
+.info-class-text,
+.info-area-text,
+.info-paint-text {
+  margin-left: 10px;
+
+  & span {
+    display: block;
+  }
+}
+
+.white-block {
+  margin-right: 90px;
+  // background: $white;
+  position: relative;
+  & img {
+    z-index: 6;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: -48px;
+    background-color: $white;
+    width: 207px;
+    height: 84px;
+    border-radius: 0px 20px 20px 0px;
+    z-index: 1;
+  }
+  @media (max-width: 720px) {
+    padding-right: 31px;
+    margin-right: 0;
+    border-right: 1px solid rgba($black, 0.2);
+    &::before {
+      display: none;
+    }
+  }
+}
+.card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 720px) {
+    display: none;
+  }
+}
+
+.about-section {
+  flex-basis: 75%;
+  padding: 48px 0 48px 48px;
+
+  @media (max-width: 720px) {
+    flex: 1;
+    padding: 10px;
+    padding-top: 35px;
+    overflow: hidden;
+    & button {
+      width: 100%;
+    }
+  }
+}
+.developer {
+  z-index: 2;
+}
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 40px 0 24px;
+  @media (max-width:330px){
+    font-size: 24px;
+  }
+}
+.description {
+  margin-bottom: 32px;
+  max-width: 740px;
+  position: relative;
+  @media (max-width: 720px) {
+    max-width: 100%;
+  }
+}
+.slider {
+  @media (max-width: 1160px) {
+    width: 100%;
+  }
+  width: 35%;
+  flex-shrink: 0;
+  flex-grow: 1;
+  position: relative;
+  & > div {
+    position: relative;
+    max-width: 100%;
+  }
+}
+.about-section {
+}
